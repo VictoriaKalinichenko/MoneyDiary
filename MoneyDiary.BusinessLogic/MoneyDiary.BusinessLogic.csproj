@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MoneyDiary.Constants\MoneyDiary.Constants.csproj" />
+    <ProjectReference Include="..\MoneyDiary.DataAccess\MoneyDiary.DataAccess.csproj" />
+    <ProjectReference Include="..\MoneyDiary.Entities\MoneyDiary.Entities.csproj" />
+    <ProjectReference Include="..\MoneyDiary.ViewModels\MoneyDiary.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDiary.Web", "MoneyDiary.Web\MoneyDiary.Web.csproj", "{00FF9061-4383-4FFF-96CB-DC118DEC756A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDiary.Entities", "MoneyDiary.Entities\MoneyDiary.Entities.csproj", "{8CD784AE-61E6-455F-993A-CC01775581D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDiary.DataAccess", "MoneyDiary.DataAccess\MoneyDiary.DataAccess.csproj", "{AC3BE828-A196-4C60-B1B2-E404A052F3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDiary.BusinessLogic", "MoneyDiary.BusinessLogic\MoneyDiary.BusinessLogic.csproj", "{FFD8A6E0-A5DE-48B3-A28B-391FF0FC8A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDiary.ViewModels", "MoneyDiary.ViewModels\MoneyDiary.ViewModels.csproj", "{9C6636BB-C193-4FF9-A431-BC0C2AEEDFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDiary.Constants", "MoneyDiary.Constants\MoneyDiary.Constants.csproj", "{04E44643-4158-4E4B-A480-709869AA30CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{00FF9061-4383-4FFF-96CB-DC118DEC756A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FF9061-4383-4FFF-96CB-DC118DEC756A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FF9061-4383-4FFF-96CB-DC118DEC756A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD784AE-61E6-455F-993A-CC01775581D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD784AE-61E6-455F-993A-CC01775581D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD784AE-61E6-455F-993A-CC01775581D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD784AE-61E6-455F-993A-CC01775581D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC3BE828-A196-4C60-B1B2-E404A052F3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3BE828-A196-4C60-B1B2-E404A052F3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3BE828-A196-4C60-B1B2-E404A052F3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3BE828-A196-4C60-B1B2-E404A052F3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD8A6E0-A5DE-48B3-A28B-391FF0FC8A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD8A6E0-A5DE-48B3-A28B-391FF0FC8A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD8A6E0-A5DE-48B3-A28B-391FF0FC8A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD8A6E0-A5DE-48B3-A28B-391FF0FC8A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6636BB-C193-4FF9-A431-BC0C2AEEDFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6636BB-C193-4FF9-A431-BC0C2AEEDFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6636BB-C193-4FF9-A431-BC0C2AEEDFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6636BB-C193-4FF9-A431-BC0C2AEEDFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E44643-4158-4E4B-A480-709869AA30CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E44643-4158-4E4B-A480-709869AA30CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E44643-4158-4E4B-A480-709869AA30CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E44643-4158-4E4B-A480-709869AA30CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
