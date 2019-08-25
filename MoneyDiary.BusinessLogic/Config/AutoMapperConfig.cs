@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
-using MoneyDiary.BusinessLogic.Mappers;
+using MoneyDiary.BusinessLogic.Mappers.Profiles;
 
 namespace MoneyDiary.BusinessLogic.Config
 {

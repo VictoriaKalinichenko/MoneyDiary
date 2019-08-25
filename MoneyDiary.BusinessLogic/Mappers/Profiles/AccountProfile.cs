@@ -2,7 +2,7 @@
 using MoneyDiary.Entities;
 using MoneyDiary.ViewModels.Account;
 
-namespace MoneyDiary.BusinessLogic.Mappers
+namespace MoneyDiary.BusinessLogic.Mappers.Profiles
 {
   public class AccountProfile : Profile
   {

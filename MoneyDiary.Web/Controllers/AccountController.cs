@@ -31,6 +31,11 @@ namespace MoneyDiary.Web.Controllers
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult<GetAllAccountViewModel> Insert(InsertAccountViewModel request)
     {
+      if (string.IsNullOrEmpty(request.ChargeNumber))
+      {
+        return BadRequest();
+      }
+
       _accountService.Insert(request);
       return Ok();
     }

@@ -10,6 +10,7 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +30,8 @@
     <None Remove="ClientApp\src\models\account-item.model.ts" />
     <None Remove="ClientApp\src\models\get-all-account.model.ts" />
     <None Remove="ClientApp\src\models\insert-account.model.ts" />
+    <None Remove="ClientApp\src\services\account.service.ts" />
+    <None Remove="ClientApp\src\services\utility.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,13 +40,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\models\account-item.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\models\get-all-account.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\models\insert-account.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\services\account.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\services\utility.service.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
@@ -72,5 +73,21 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
 
 </Project>
