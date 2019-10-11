@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -17,6 +17,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.8.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +31,7 @@
     <None Remove="ClientApp\src\models\account-item.model.ts" />
     <None Remove="ClientApp\src\models\get-all-account.model.ts" />
     <None Remove="ClientApp\src\models\insert-account.model.ts" />
+    <None Remove="ClientApp\src\models\select-list-item.model.ts" />
     <None Remove="ClientApp\src\services\account.service.ts" />
     <None Remove="ClientApp\src\services\utility.service.ts" />
   </ItemGroup>
@@ -43,6 +45,7 @@
     <TypeScriptCompile Include="ClientApp\src\models\account-item.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\models\get-all-account.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\models\insert-account.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\models\select-list-item.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\services\account.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\services\utility.service.ts" />
   </ItemGroup>

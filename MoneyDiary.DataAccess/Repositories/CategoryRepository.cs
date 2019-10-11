@@ -8,15 +8,17 @@ namespace MoneyDiary.DataAccess.Repositories
 {
   public class CategoryRepository : ICategoryRepository
   {
+    private readonly MoneyDiaryContext _context;
+
+    public CategoryRepository(MoneyDiaryContext context)
+    {
+      _context = context;
+    }
+
     public List<Category> GetAll()
     {
       var categories = new List<Category>();
-
-      using (var context = new MoneyDiaryContext())
-      {
-        categories = context.Category.ToList();
-      }
-
+      categories = _context.Category.ToList();
       return categories;
     }
   }

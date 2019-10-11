@@ -2,11 +2,11 @@
 using Microsoft.Extensions.DependencyInjection;
 using MoneyDiary.BusinessLogic.Mappers.Profiles;
 
-namespace MoneyDiary.BusinessLogic.Config
+namespace MoneyDiary.BusinessLogic.Configuration
 {
   public class AutoMapperConfig
   {
-    public void ConfigureServices(IServiceCollection services)
+    public static void ConfigureServices(IServiceCollection services)
     {
       var mappingConfig = new MapperConfiguration(mc =>
       {

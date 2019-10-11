@@ -9,35 +9,29 @@ namespace MoneyDiary.DataAccess.Repositories
 {
   public class TransactionRepository : ITransactionRepository
   {
+    private readonly MoneyDiaryContext _context;
+
+    public TransactionRepository(MoneyDiaryContext context)
+    {
+      _context = context;
+    }
+
     public List<Transaction> GetAll()
     {
       var transactions = new List<Transaction>();
-
-      using (var context = new MoneyDiaryContext())
-      {
-        transactions = context.Transaction.ToList();
-      }
-
+      transactions = _context.Transaction.ToList();
       return transactions;
     }
 
     public void Insert(Transaction transaction)
     {
-      using (var context = new MoneyDiaryContext())
-      {
-        context.Transaction.Add(transaction);
-      }
+      _context.Transaction.Add(transaction);
     }
 
     public Transaction Get(Guid id)
     {
       Transaction transaction = null;
-
-      using (var context = new MoneyDiaryContext())
-      {
-        transaction = context.Transaction.FirstOrDefault(x => x.Id == id);
-      }
-
+      transaction = _context.Transaction.FirstOrDefault(x => x.Id == id);
       return transaction;
     }
   }
